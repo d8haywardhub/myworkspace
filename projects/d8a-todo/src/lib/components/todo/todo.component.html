@@ -1,0 +1,10 @@
+<h3>To Do List</h3>
+
+<input type="text" class="field" name="value" [(ngModel)]="newTodo" (change)="onChange($event)"/>
+<button (click)="addATodo()">Add</button>
+<ul>
+    <li *ngFor="let todo of (todos$| async); let i = index">
+        <h2 [style.text-decoration]="getTextDecoration(todo)" (click)="toggleDone(i)"> {{todo.note}}</h2>
+    </li>
+</ul>
+

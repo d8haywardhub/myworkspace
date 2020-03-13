@@ -17,7 +17,27 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "auth": [
+        "dist/auth"
+      ],
+      "auth/*": [
+        "dist/auth/*"
+      ],
+      "env": [
+        "dist/env"
+      ],
+      "env/*": [
+        "dist/env/*"
+      ],
+      "d8a-todo": [
+        "dist/d8a-todo"
+      ],
+      "d8a-todo/*": [
+        "dist/d8a-todo/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
